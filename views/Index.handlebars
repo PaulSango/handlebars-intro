@@ -1,0 +1,56 @@
+<h2 style="color:#191c1c;">Pieyyouel Blizzard Entertainment.</h2>
+
+<p class="po" id="note" style="color:#03045f;"></p>
+<div class="leftcenter">
+<p class="p2">
+<button onclick="document.getElementById('forlog').style.display='block'" style="width:200px;" >Login</button>
+<button onclick="document.getElementById('forreg').style.display='block'" style="width:200px;" >Register</button></p>
+</div><p class="po2"></p>
+
+
+
+<!---Login-->
+<div id="forlog" class="modal">
+  <form name="signin" class="modal-content animate">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('forlog').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="container"></br>
+      <div id="warninglog"></div>
+      <input type="text" id="toemail" placeholder="Email - example@gmail.com" required>
+      <input type="password" id="topass" placeholder="Password" required>  
+      <button id="btn1" class="btnposition">Sign-In</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('forlog').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+
+  </form>
+</div>
+
+
+<!---Register-->
+<div id="forreg" class="modal2">
+  <form name="signup" class="modal-content animate">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('forreg').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="container">
+      </br><input type="text" name="Eid" id="emailid" placeholder="Email - example@gmail.com" required>
+      <input type="password" name="pass1" id="pass1" placeholder="Password" required>
+      <input type="password" name="pass2" id="pass2" placeholder="Password Confirmation" required>
+      <button id="signup" name="signup" class="btnposition">SignUp</button>
+
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('forreg').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+
+  </form>
+</div>
+
+<script type="text/javascript" src="js/lr.js"></script>
